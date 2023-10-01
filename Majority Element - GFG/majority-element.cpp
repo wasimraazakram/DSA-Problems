@@ -17,19 +17,21 @@ class Solution{
     {
         
         // your code here
-        map<int,int>mpp;
         
+        map<int,int>mpp;
+
         for(int i=0;i<size;i++)
         {
             mpp[a[i]]++;
         }
-        
-        for(auto it: mpp)
+
+        for(auto it:mpp)
         {
-            if(it.second >size/2)
+            if(it.second>(size/2))
             return it.first;
         }
         return -1;
+        
     }
 };
 
