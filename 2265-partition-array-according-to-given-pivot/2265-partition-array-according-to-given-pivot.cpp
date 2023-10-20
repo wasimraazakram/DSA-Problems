@@ -1,9 +1,9 @@
 class Solution {
 public:
     vector<int> pivotArray(vector<int>& nums, int pivot) {
-        int count =0;    //here count is counting the pivot equal values
+        int count =0;   
         int i=0,n = nums.size();
-        vector<int>smaller,greater;  // here i will store smaller and greater values comparing with pivot
+        vector<int>smaller,greater; 
         while(i<n){
             if(nums[i] < pivot)
                 smaller.push_back(nums[i]);
